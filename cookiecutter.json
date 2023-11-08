@@ -1,0 +1,10 @@
+{
+  "project_slug": "py-fiq-curso-2023",
+  "project_name": "Python Template for FIQ Course",
+  "description": "Poetry based project template for the FIQ Python Programming Course 2023",
+  "description_es": "Plantilla de poetry para los proyectos del Curso de Python en la FIQ 2023",
+  "version": "0.1.0",
+  "dev_dependencies": ["commitizen", "mypy", "pre-commit", "python-lsp-server", "safety", "wemake-python-styleguide"],
+  "test_dependencies": ["pytest", "pytest-cov", "flake8-pytest-style"]
+}
+

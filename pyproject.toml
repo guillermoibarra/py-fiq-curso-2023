@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "{{cookiecutter.project_slug}}"
+version = "{{cookiecutter.version}}"
+description = "{{cookiecutter.description}}"
+authors = ["Guillermo Ibarra <guillermoibarra@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+
+[tool.poetry.group.dev.dependencies]
+{% for dev_dependency in cookiecutter.dev_dependencies %}
+{{ dev_dependency }} = "*"
+{% endfor %}
+
+[tool.poetry.group.test.dependencies]
+{% for test_dependency in cookiecutter.test_dependencies %}
+{{ test_dependency }} = "*"
+{% endfor %}
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
